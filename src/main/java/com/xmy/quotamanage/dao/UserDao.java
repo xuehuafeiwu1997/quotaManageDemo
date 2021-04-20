@@ -1,0 +1,1 @@
+package com.xmy.quotamanage.dao;import com.xmy.quotamanage.entity.User;import org.apache.ibatis.annotations.Mapper;import org.apache.ibatis.annotations.Param;import java.util.List;/** * @author xmy * @date 2021/4/16 1:13 下午 */@Mapperpublic interface UserDao {    User findMobileAndPassword(@Param("id") Long id);    List<User> getAllUsers();}

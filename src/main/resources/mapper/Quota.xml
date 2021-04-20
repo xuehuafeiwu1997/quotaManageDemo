@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xmy.quotamanage.dao.QuotaDao">
+    <select id = "getQuotaById" resultType="com.xmy.quotamanage.entity.Quota">
+         select quotaId,qcount from quota where quotaId = #{quotaId};
+    </select>
+
+    <update id="updateQuota">
+            update quota set qcount = #{qcount} where quotaId = #{quotaId};
+    </update>
+
+</mapper>

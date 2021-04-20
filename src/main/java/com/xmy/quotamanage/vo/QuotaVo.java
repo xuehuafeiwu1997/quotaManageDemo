@@ -1,0 +1,1 @@
+package com.xmy.quotamanage.vo;/** * @author xmy * @date 2021/4/16 2:40 下午 */public class QuotaVo {    private Long quotaId;    private double changeCount;}
